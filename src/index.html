@@ -6,30 +6,63 @@
     <title>Assignment 3 - Landing Page</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  
+
   <body>
     <!-- ========== NAVBAR ========== -->
-<nav class="bg-black/90 backdrop-blur-[40px] border-b border-white/10">
-      <div class="flex items-center justify-between h-[84px] max-w-[1440px] mx-auto px-[140px]">
-
+    <nav class="bg-black/100 backdrop-blur-[40px] border-b border-white/10">
+      <div
+        class="flex items-center justify-between h-[84px] max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[140px]"
+      >
         <!-- Logo -->
         <div class="flex-1">
-          <h1 class="text-white font-bold text-lg md:text-xl tracking-wide hover:opacity-80 transition">
+          <h1
+            class="text-white font-bold text-lg md:text-xl tracking-wide hover:opacity-80 transition"
+          >
             Tech.
           </h1>
         </div>
 
         <!-- Menu -->
-        <ul id="mobile-menu" class="hidden md:flex flex-col md:flex-row gap-3 text-white justify-center flex-3">
-          <li><a href="#" class="px-4 py-2 rounded-full hover:bg-white/10 transition">Home</a></li>
-          <li><a href="#" class="px-4 py-2 rounded-full hover:bg-white/10 transition">About</a></li>
-          <li><a href="#" class="px-4 py-2 rounded-full hover:bg-white/10 transition">Services</a></li>
-          <li><a href="#" class="px-4 py-2 rounded-full hover:bg-white/10 transition">Our Team</a></li>
+        <ul
+          id="mobile-menu"
+          class="hidden md:flex flex-col md:flex-row gap-3 text-white justify-center flex-3"
+        >
+          <li>
+            <a
+              href="#about"
+              class="px-4 py-2 rounded-full hover:bg-white/10 transition"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#services"
+              class="px-4 py-2 rounded-full hover:bg-white/10 transition"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#ourwork"
+              class="px-4 py-2 rounded-full hover:bg-white/10 transition"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="#team"
+              class="px-4 py-2 rounded-full hover:bg-white/10 transition"
+              >Our Team</a
+            >
+          </li>
         </ul>
 
         <!-- Right Button -->
         <div class="flex-1 flex justify-end items-center">
-          <a href="#" class="hidden md:inline-block bg-blue-600 px-5 py-2 text-white rounded-full font-medium hover:bg-blue-900 transition">
+          <a
+            href="#contact"
+            class="hidden md:inline-block bg-blue-600 px-5 py-2 text-white rounded-full font-medium hover:bg-blue-900 transition"
+          >
             Contact Us
           </a>
 
@@ -41,13 +74,35 @@
       </div>
 
       <!-- Mobile Menu (Hidden by default) -->
-      <ul id="mobile-menu-mobile" class="hidden flex-col gap-4 p-6 bg-black/90 text-white md:hidden">
-        <li><a href="#" class="block px-4 py-2 rounded-full hover:bg-white/10">Home</a></li>
-        <li><a href="#" class="block px-4 py-2 rounded-full hover:bg-white/10">About</a></li>
-        <li><a href="#" class="block px-4 py-2 rounded-full hover:bg-white/10">Services</a></li>
-        <li><a href="#" class="block px-4 py-2 rounded-full hover:bg-white/10">Our Team</a></li>
+      <ul
+        id="mobile-menu-mobile"
+        class="hidden flex-col gap-4 p-6 bg-black/90 text-white md:hidden"
+      >
         <li>
-          <a href="#" class="block bg-blue-600 px-5 py-2 rounded-full text-center hover:bg-blue-900">
+          <a href="#about" class="block px-4 py-2 rounded-full hover:bg-white/10"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="#services" class="block px-4 py-2 rounded-full hover:bg-white/10"
+            >About</a
+          >
+        </li>
+        <li>
+          <a href="#ourwork" class="block px-4 py-2 rounded-full hover:bg-white/10"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a href="#team" class="block px-4 py-2 rounded-full hover:bg-white/10"
+            >Our Team</a
+          >
+        </li>
+        <li>
+          <a
+            href="#contact"
+            class="block bg-blue-600 px-5 py-2 rounded-full text-center hover:bg-blue-900"
+          >
             Contact Us
           </a>
         </li>
@@ -55,16 +110,310 @@
     </nav>
 
     <!-- ========== HERO SECTION ========== -->
+<section class="bg-[linear-gradient(180deg,#000000_0%,#020617_45%,#1d4ed8_100%)]">
+  <div class="h-[750px] w-full max-w-[1440px] mx-auto px-6 md:px-[140px]">
+    <div class="flex flex-col md:flex-row items-center justify-between h-full gap-8">
+      <!-- Left Content -->
+      <div id="home" class="text-white h-[186px] max-w-[687px] flex flex-col gap-[16px]">
+        <h1 class="h-[68px] max-w-[687px] text-3xl md:text-5xl font-bold font-weight-700">
+          Build With The 
+          <span class="italic font-bold font-weight-700">Future</span>
+        </h1>
+        <p class="h-[102px] max-w-[687px] text-neutral-500 md:text-xl">
+          From building sleek websites and mobile apps to integrating AI
+          solutions, we help brands turn ideas into powerful digital experiences
+          that connect, engage, and scale.
+        </p>
+        <button
+          class="h-[48px] w-[300px] bg-blue-600 px-6 py-3 text-white rounded-full font-medium hover:bg-blue-900 transition"
+        >
+          Let's Talk
+        </button>
+      </div>
+
+      <!-- Right Image -->
+      <div class="flex-1 flex justify-center md:justify-end items-end md:items-center relative">
+        <div
+          class="relative translate-y-[4px] sm:translate-y-0 w-[320px] sm:w-[380px] md:w-[500px] lg:w-[600px] aspect-[600/735] overflow-visible"
+        >
+          <!-- Base left hand -->
+          <img
+            src="../assets/images/hand3.png"
+            alt="Left hand holding phone"
+            class="absolute inset-0 w-full h-full object-contain z-20"
+          />
+
+          <!-- Phone frame + screen -->
+          <div
+            class="absolute top-[14%] left-[44.6%] w-[48%] aspect-[280/531] z-10"
+          >
+            <div
+              class="absolute top-[2.2%] left-[5.1%] w-[90.9%] h-[95.7%] rounded-[1.7rem] overflow-hidden z-10"
+            >
+              <img
+                src="../assets/images/image1.png"
+                alt="Tech app preview"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <img
+              src="../assets/images/Silver.png"
+              alt="Phone frame"
+              class="absolute inset-0 w-full h-full object-contain z-20"
+            />
+          </div>
+
+          <!-- Right fingers overlay -->
+          <img
+            src="../assets/images/hand2.png"
+            alt="Right fingers holding phone"
+            class="absolute  right-[-1%] w-[108%] h-full object-contain z-30"
+          />
+        </div>
+      </div>
+
+  </div>
+</section>
+
+<section id="about" class="w-full bg-[#000000] text-white">
+      <div
+        class="max-w-[1440px] mx-auto h-[332px] px-6 md:px-[140px] py-4 flex flex-col justify-center items-center gap-4"
+      >
+        <h2
+          class="w-full max-w-[1160px] h-[56px] text-center text-[#FDFDFD] text-3xl md:text-[48px] font-bold leading-[56px] tracking-[-0.03em]"
+        >
+          Who We Are
+        </h2>
+        <p
+          class="w-full max-w-[1160px] min-h-[84px] text-center text-neutral-500 text-lg md:text-[28px] font-semibold leading-[1.3125] tracking-[-0.02em]"
+        >
+          We're a group of tech students trained in 
+          <span class="text-white font-bold">building real-world digital products.</span>
+          From coding to design, we 
+          <span class="text-white font-bold">craft modern solutions for modern problems.</span>
+          
+        </p>
+      </div>
+    </section>
+
+<section id="services" class="w-full bg-[#000000] text-white">
+  <div class="max-w-[1440px] mx-auto min-h-[776px] px-4 sm:px-6 lg:px-[140px] py-16 md:py-20">
+    <div class="max-w-[1160px] mx-auto flex flex-col items-center gap-4">
+      <h2 class="text-3xl md:text-[48px] font-bold text-center">What We Do</h2>
+      <p class="max-w-[760px] text-center text-neutral-500 text-base md:text-lg font-semibold leading-[1.5] tracking-[-0.02em]">
+        We offer simple tech solutions to help your ideas grow.
+      </p>
+    </div>
+
+    <div class="max-w-[1160px] mx-auto mt-10 sm:mt-12 grid grid-cols-2 gap-4 sm:gap-5 lg:gap-4 xl:grid-cols-3">
+      <div class="border border-white/10 bg-white/[0.03] p-5 sm:p-6 min-h-[220px] flex flex-col items-center">
+        <img
+          src="../assets/icons/Website1.png"
+          alt="Web Development"
+          class="mb-4 h-10 w-10 sm:h-12 sm:w-12"
+        />
+        <h3 class="text-center text-lg md:text-xl font-bold text-white">Web Development</h3>
+        <p class="mt-3 text-md md:text-center leading-6 text-neutral-500">
+          Modern websites using HTML, CSS, JavaScript, and frameworks.
+        </p>
+      </div>
+
+      <div class="border border-white/10 bg-white/[0.03] p-5 sm:p-6 min-h-[220px] flex flex-col items-center">
+        <img
+          src="../assets/icons/Mobile1.png"
+          alt="App Development"
+          class="mb-4 h-10 w-10 sm:h-12 sm:w-12"
+        />
+        <h3 class="text-center text-lg md:text-xl font-bold text-white">App Development</h3>
+        <p class="mt-3 text-md md:text-center leading-6 text-neutral-500">
+          Mobile and desktop apps tailored for your needs.
+        </p>
+      </div>
+
+      <div class="border border-white/10 bg-white/[0.03] p-5 sm:p-6 min-h-[220px] flex flex-col items-center">
+        <img
+          src="../assets/icons/Paint.png"
+          alt="UI / UX Design"
+          class="mb-4 h-10 w-10 sm:h-12 sm:w-12"
+        />
+        <h3 class="text-center text-lg md:text-xl font-bold text-white">UI / UX Design</h3>
+        <p class="mt-3 text-md md:text-center leading-6 text-neutral-500">
+          Clean and functional designs for better user experience.
+        </p>
+      </div>
+
+      <div class="border border-white/10 bg-white/[0.03] p-5 sm:p-6 min-h-[220px] flex flex-col items-center">
+        <img
+          src="../assets/icons/Ai.png"
+          alt="AI Integration"
+          class="mb-4 h-10 w-10 sm:h-12 sm:w-12"
+        />
+        <h3 class="text-center text-lg md:text-xl font-bold text-white">AI Integration</h3>
+        <p class="mt-3 text-md md:text-center leading-6 text-neutral-500">
+          Smart solutions using AI-powered tools and automation.
+        </p>
+      </div>
+
+      <div class="border border-white/10 bg-white/[0.03] p-5 sm:p-6 min-h-[220px] flex flex-col items-center">
+        <img
+          src="../assets/icons/Landingpage1.png"
+          alt="Landing Page Design"
+          class="mb-4 h-10 w-10 sm:h-12 sm:w-12"
+        />
+        <h3 class="text-center text-lg md:text-xl font-bold text-white">Landing Page Design</h3>
+        <p class="mt-3 text-md md:text-center leading-6 text-neutral-500">
+          High-converting landing pages for your product or business.
+        </p>
+      </div>
+
+      <div class="border border-white/10 bg-white/[0.03] p-5 sm:p-6 min-h-[220px] flex flex-col items-center">
+        <img
+          src="../assets/icons/CMS.png"
+          alt="CMS Integration"
+          class="mb-4 h-10 w-10 sm:h-12 sm:w-12"
+        />
+        <h3 class="text-center text-lg md:text-xl font-bold text-white">CMS Integration</h3>
+        <p class="mt-3 text-md md:text-center leading-6 text-neutral-500">
+          Easy-to-manage websites with WordPress or Webflow.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+  
+<section id="ourwork" class="w-full bg-[#000000] text-white">
+  <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[140px] py-16 md:py-20">
+    <div class="max-w-[1160px] mx-auto flex flex-col items-center gap-4">
+      <h2 class="text-3xl md:text-[48px] font-bold text-center">Our Work</h2>
+      <p class="max-w-[760px] text-center text-neutral-500 text-base md:text-md font-semibold leading-[1.5] tracking-[-0.02em]">
+        See what we’ve built with passion and purpose
+      </p>
+      <div class="w-full max-w-[1160px] mx-auto mt-12 grid grid-cols-1 gap-4 sm:gap-5 lg:grid-cols-3 lg:gap-6">
+        <img src="../assets/images/Portfolio Card (2).png" class="w-full object-cover" />
+        <img src="../assets/images/Portfolio Card (1).png" class="w-full object-cover" />
+        <img src="../assets/images/Portfolio Card.png" class="w-full object-cover" />
+      </div>
+    </div>
+    
+  </div>
+  </section>
+
+
+    <!-- OurTeam -->
+    <section id="team" class="w-full bg-[#000000] text-white">
+      <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[140px] py-16 md:py-20">
+        <div class="max-w-[1160px] mx-auto flex flex-col items-center gap-4">
+          <h2 class="text-3xl md:text-[48px] font-bold text-center">Meet the Team</h2>
+          <p class="max-w-[760px] text-center text-neutral-500 text-base md:text-md font-semibold leading-[1.5] tracking-[-0.02em]">
+            A group of future-ready tech makers.
+          </p>
+
+          <div class="w-full mt-12 grid grid-cols-2 gap-4 sm:gap-5 lg:grid-cols-4 lg:gap-6">
+            <div class="flex flex-col items-center text-center">
+              <img
+                src="../assets/images/Team Member Card (1).png"
+                alt="Alex Jonathan"
+                class="w-full rounded-[24px] object-cover"
+              />
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+              <img
+                src="../assets/images/Team Member Card (2).png"
+                alt="Mario Lopez"
+                class="w-full rounded-[24px] object-cover"
+              />
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+              <img
+                src="../assets/images/Team Member Card (3).png"
+                alt="Jasper Kim"
+                class="w-full rounded-[24px] object-cover"
+              />
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+              <img
+                src="../assets/images/Team Member Card.png"
+                alt="Product Manager"
+                class="w-full rounded-[24px] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ========== FOOTER ========== -->
-     <script>
-    // JavaScript code for mobile menu toggle
-    const mobileMenuButton = document.querySelector('#menu-toggle');
-    const mobileMenu = document.querySelector('#mobile-menu-mobile');
 
-    mobileMenuButton.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
+    <section id="contact" class="w-full bg-[#000000] text-white border-t border-white/10">
+      <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[140px] py-16 md:py-20">
+        <div class="max-w-[1160px] mx-auto flex flex-col items-center gap-6">
+          <h2
+            class="w-full max-w-[1160px] text-center text-[#FDFDFD] text-3xl md:text-[48px] font-bold leading-[56px] tracking-[-0.03em]"
+          >
+            Let's Collaborate
+          </h2>
+          <p
+            class="w-full max-w-[1160px] text-center text-neutral-500 text-lg md:text-[14px] font-semibold leading-[1.3125] tracking-[-0.02em]"
+          >
+            We're here to help you achieve your digital goals. Tell us about your
+            project, and we'll help turn the idea into a polished digital
+            experience.
+          </p>
+
+          <form class="w-full max-w-[600px] mt-4 rounded-[28px] border border-white/10 bg-white/[0.04] p-6 md:p-8 flex flex-col gap-4">
+            <label for="nama">Name</label>
+            <input
+              type="text"
+              placeholder="Name"
+              class="h-12 rounded-full border border-white/10 bg-black/30 px-5 text-white placeholder:text-white/35 outline-none transition focus:border-blue-500"
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              placeholder="Email"
+              class="h-12 rounded-full border border-white/10 bg-black/30 px-5 text-white placeholder:text-white/35 outline-none transition focus:border-blue-500"
+            />
+            <label for="message">Message</label>
+            <textarea
+              placeholder="Message"
+              rows="5"
+              class="rounded-[24px] border border-white/10 bg-black/30 px-5 py-4 text-white placeholder:text-white/35 outline-none transition focus:border-blue-500 resize-none"
+            ></textarea>
+
+            <button
+              type="submit"
+              class="h-12 rounded-full bg-blue-600 px-6 text-white font-semibold transition hover:bg-blue-700"
+            >
+              Send Message
+            </button>
+          </form>
+
+          
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="w-full bg-black text-white border-t border-white/10">
+      <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[140px] py-6">
+        <div class="max-w-[1160px] mx-auto flex flex-col gap-3 text-center sm:flex-row sm:items-center sm:justify-between sm:text-left">
+          <p class="text-white/75">Terima kasih telah berkunjung ke landing page saya!</p>
+          <p class="text-white/45">© 2026 My Landing Page by Afrizal</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // JavaScript code for mobile menu toggle
+      const mobileMenuButton = document.querySelector("#menu-toggle");
+      const mobileMenu = document.querySelector("#mobile-menu-mobile");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>

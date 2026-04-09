@@ -331,9 +331,7 @@
           <p
             class="w-full max-w-[1160px] text-center text-neutral-500 text-base md:text-lg font-semibold leading-[1.3125] tracking-[-0.02em]"
           >
-            We're here to help you achieve your digital goals. Tell us about your
-            project, and we'll help turn the idea into a polished digital
-            experience.
+            Need a tech team? We're ready to help
           </p>
 
           <form class="w-full max-w-[600px] mt-4 rounded-[28px] bg-[#000000] p-6 md:p-8 flex flex-col gap-4">
@@ -388,6 +386,11 @@
 
       mobileMenuButton.addEventListener("click", () => {
         mobileMenu.classList.toggle("hidden");
+        if (mobileMenu.classList.contains("hidden")) {
+          mobileMenuButton.innerText = "☰";
+        } else {
+          mobileMenuButton.innerText = "✕";
+        }
       });
     </script>
   </body>

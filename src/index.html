@@ -392,6 +392,14 @@
           mobileMenuButton.innerText = "✕";
         }
       });
+
+      // Menutup menu dengan tombol Escape
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && !mobileMenu.classList.contains("hidden")) {
+          mobileMenu.classList.add("hidden");
+          mobileMenuButton.innerText = "☰";
+        }
+      });
     </script>
   </body>
 </html>
